@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crypto E-commerce</title>
+	<style>
+	body{
+overflow-x: hidden;
+	}
+	.parent{
+		overflow-x: hidden;
+		padding-bottom: 10vh;
+	}
+	html, *, *::before, *::after{
+		box-sizing: border-box;
+	}
+	.open{
+		transform: translateX(0vw);
+	}
+	
+
+header{
+	background-image: url("./images/background1.png");
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.hamburger{
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-align: right;
+	padding-right: 3vw;
+	padding-top: 3vh;
+}
+.opener:hover, .closer:hover{
+	cursor: pointer;
+}
+.opener{
+	padding: 0.3rem;
+}
+.closer{
+	background: red;
+	padding: 0.3rem;
+	display: none;
+}
+nav ul{
+	line-height: 2rem;
+	padding: 3vw;
+	width: 50vw;
+	background:/*#3d4c69*/ /*#ca7113*/ #fccc6a;
+	list-style: none;
+	margin-left:43vw;
+/*	display: none;*/
+	transform: translateX(50vw);
+		transition: transform 0.5s linear;
+
+}
+ul li a{
+	text-decoration: none;
+	color: /*white*/ #001029;
+}
+.optimize{background: linear-gradient(116.87deg, #9F8C45 8.03%, #FFFFFF 37.42%, #EA8FD6 66.81%);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	position: absolute;
+font-size: 2rem;
+font-weight: 400;	
+}
+.optimize span{
+	font-weight: 700;
+}
+#opt{
+	margin-top: 7vh;
+padding-left: 5rem;
+}
+.start{
+	margin-top: 25vh;
+padding: 0.4rem;
+border-radius: 0.4rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #FFCD6B 51.04%, #A68227 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+.start:hover{
+	padding: 0.6rem;
+	border-radius: 0.8rem;
+	cursor: pointer;
+}
+.start a{
+	text-decoration: none;
+	color: #000;
+}
+nav{
+
+}
+.back{
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+.back a:hover{
+	background:#FFCD6B ;
+}
+.back a{
+	margin-left: 70vw;
+	background:#ca7113 ;
+	position: fixed;
+	line-height: 4rem;
+	padding: 0.5rem;
+	white-space: nowrap;
+	border-radius: 4rem;
+	text-decoration: none;
+	color:#001029 ;
+}
+.B{
+	width: 92vw;
+list-style: none;
+display: flex;
+gap: 1vw;
+padding: 1rem;
+border: 1px solid #f1f1f1;
+background: whitesmoke;
+margin-top: -8vh;
+margin-left: 2%;
+text-align: center;
+border-radius: 4px;
+}
+.b1, .b2, .b3, .b4, .b5, .b6{
+	content: url("./images/vector.svg");
+	height: 1.5rem;
+	width: 1.5rem;
+	border-left: 1px solid #D6D6D6;
+	padding-left: 0.2rem;
+}
+.B li{
+	display: flex;
+}
+.b1-row1, .b2-row1, .b3-row1, .b4-row1, .b5-row1, .b6-row1{
+font-size: 0.4rem;
+}
+.b1-row2, .b2-row2, .b3-row2, .b4-row2, .b5-row2, .b6-row2{
+font-size: 0.5rem;
+
+}
+.b1-row2 span, .b2-row2 span, .b3-row2 span, .b4-row2 span, .b5-row2 span, .b6-row2 span{
+font-size: 0.3rem;
+font-weight: 500;
+}
+.thing1, .thing2, .thing3{
+text-align: center;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.38%, rgba(255, 240, 109, 0.116) 75.52%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+width: 94%;
+padding: 2rem;
+margin-left: 3%;
+height: 30rem;
+box-shadow: 0px 4px 34px 21px #9D9D9D0F;
+margin-bottom:5vh;
+border-radius: 6px;
+}
+.thing1 figure, .thing2 figure, .thing3 figure{
+margin-bottom: 2rem;
+}
+.thing1 img, .thing2 img, .thing3 img{
+margin-top: 5rem;
+}
+.thing1 a{
+text-decoration: none; background: gold; padding: 0.4rem; width: 10rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #999900 51.04%, #A68227 100%);
+color: white;
+padding-left: 2rem; padding-right: 2rem;
+
+}
+ .thing2 a{
+text-decoration: none; background: gold; padding: 0.4rem; width: 10rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #bbbb00 51.04%, #A68227 100%);
+color: white;
+padding-left: 2rem; padding-right: 2rem;
+
+ } 
+ .thing3 a{
+text-decoration: none; background: gold; padding: 0.4rem; width: 10rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #dccd00 51.04%, #A68227 100%);
+color: white;
+padding-left: 2rem; padding-right: 2rem;
+}
+.we-do{
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.7rem;
+	color: #878787;
+margin-left: 3%;
+width: 94%;
+}
+.sect1{
+	border-bottom: 4px solid #f1f1f1;
+}
+.p1{
+height: 0.4rem;
+	width: 0.4rem;
+	border-radius: 0.2rem;
+	background: #C4C4C4;
+
+}
+.p2{
+	height: 0.4rem;
+	width: 0.4rem;
+	border-radius: 0.2rem;
+	background: linear-gradient(0deg, #8C6005, #8C6005),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
+}
+#stock, #binary{
+	font-weight:700 ;
+	font-size:1.4rem ;
+	color: #855703;
+line-height: 2.2rem;
+}
+.image-content1{ 
+	box-shadow: 0px 4px 28px -1px #0000001C;
+height: 5rem;
+width: 5rem;
+border-radius: 2.5rem;
+padding: 1rem;
+content: url("./images/exchange-svgrepo-com (1) 1.svg");
+}
+.image-content2{ 
+	box-shadow: 0px 4px 28px -1px #0000001C;
+height: 5rem;
+width: 5rem;
+border-radius: 2.5rem;
+content: url("./images/24-hours-svgrepo-com 2.svg");
+padding: 1rem;
+
+}
+.image-content3{ 
+	box-shadow: 0px 4px 28px -1px #0000001C;
+height: 5rem;
+width: 5rem;
+border-radius: 2.5rem;
+content: url("./images/24-hours-svgrepo-com 1.svg");
+padding: 1rem;
+}
+.sect2-image{
+	height: 40vh;
+	width: 75vw;
+	margin-top: 10vh;
+}
+.line1, .line2, .line3{
+	display: flex;
+	gap: 5vw;
+}
+.sect2{
+	text-align: center;
+	padding: 4rem;
+}
+.text-content1 p{
+	font-family: Montserrat;
+font-size: 1.1rem;
+font-weight: 700;
+line-height: 21px;
+color: #8C6005;
+}
+.sect3 figure{
+
+	width: 100vw;
+content: url("./images/why-choose-us.png");
+margin: 0;
+}
+td{
+	font-size: 1.3rem;
+}
+td span{
+	color: #8BFDAB;
+	font-size: 0.9rem;
+}
+table{
+	border:1px solid #B5B5B5;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	text-align: center;
+margin-left: 10vw;
+background: #ECECEC;
+}
+tr{
+	display: flex;
+	gap: 5vw;
+	white-space: nowrap;
+	padding-bottom: 2vh;
+	background: #fff;
+}
+.sect4-left > span, .sect4-right > span{
+	color: #3E45FF;
+	line-height: 1.7rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+	display: block;
+	padding-top:15vh;
+	padding-bottom:3vh;
+margin-left: 15vw;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="parent">
+	<header>
+		<nav id="top">
+			<div class="hamburger">
+				<label class="opener">&#x2630;</label>
+				<span class="closer">&#x2715;</span>
+			</div>
+			<ul class="ul">
+				<li> <a href="">The Market</a> </li>
+				<li> <a href="">Sign Up</a> </li>
+				<li> <a href="">About Us</a> </li>
+				<li> <a href="">Login</a> </li>
+				<li> <a href="">Contact Us</a> </li>
+			</ul>
+		</nav>
+		<div id="opt">
+			<p class="optimize"> <span>Optimize</span>  Your <br> <span>Finance</span>  For <br>
+			<span>Profits</span> </p>
+			<button class="start"> <a href="">
+			Get Started
+	</a>	</button>
+		</div>
+		<div class="back">
+			<a href="#top">Back to top</a>
+		</div>
+		
+
+				
+
+
+			 
+
+		
+	</header>
+
+<main>
+	<section class="section">
+		<div class="B">
+
+			<li> <span class="b1"> </span> 
+
+				<span class="side-b1">
+				<div class="b1-row1">4,565.80  <img src="./images/vector 14.png"> </div>
+
+				<div class="b1-row2">BITCOIN <span>BTC</span></div>
+
+			</span> 
+
+		</li>
+
+
+			<li> <span class="b2"> </span> 
+
+				<span class="side-b2">
+				<div class="b2-row1">4,565.80  <img src="./images/vector 14.png"> </div>
+<div class="b2-row2">BITCOIN <span>BTC</span></div>
+
+			</span> 
+
+		</li>
+
+
+			<li> <span class="b3"> </span> 
+
+				<span class="side-b3">
+				<div class="b3-row1">4,565.80  <img src="./images/vector 14.png"> </div>
+
+				<div class="b3-row2">BITCOIN <span>BTC</span></div>
+
+			</span> 
+
+		</li>
+<li> <span class="b4"> </span> 
+
+				<span class="side-b4">
+				<div class="b4-row1">4,565.80  <img src="./images/vector 14.png"> </div>
+
+				<div class="b4-row2">BITCOIN <span>BTC</span></div>
+
+			</span> 
+
+		</li>
+
+
+			<li> <span class="b5"> </span> 
+
+				<span class="side-b5">
+				<div class="b5-row1">4,565.80  <img src="./images/vector 14.png"> </div>
+
+				<div class="b5-row2">BITCOIN <span>BTC</span></div>
+
+			</span>
+			</li>
+
+
+			<li> <span class="b6"> </span> 
+
+				<span class="side-b6">
+				<div class="b6-row1">4,565.80  <img src="./images/vector 14.png"> </div>
+
+				<div class="b6-row2">BITCOIN <span>BTC</span>  </div>
+
+			</span> 
+
+		</li>
+
+
+
+
+
+		</div>
+
+
+		<section class="sect1">
+			<p class="we-do">What We Do</p>
+			<div class="things">
+	<div class="thing1"> <img src="./images/investment-model-svgrepo-com 2.svg"> 
+		<figure>
+<p id="binary">Binary Option</p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sagittis nunc, nec euismod id nisl ante turpis. Augue vel velit semper malesuada odio dis sed.</figure> <br>
+		 <a href="">Invest</a>
+		  </div>
+	<div class="thing2"> <img src="./images/increasing-stocks-graphic-of-bars-svgrepo-com 1.svg"> 
+		<figure>
+<p id="stock">Stocks $ ETF</p>
+
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sagittis nunc, nec euismod id nisl ante turpis. Augue vel velit semper malesuada odio dis sed.</figure> <br> 
+		<a href="">Invest</a> </div>
+	<div class="thing3"> <img src="./images/coin-stack-svgrepo-com (1) 1.svg">
+	<br> 
+		<figure>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sagittis nunc, nec euismod id nisl ante turpis. Augue vel velit semper malesuada odio dis sed.</figure> <br>
+		 <a href="">Invest</a> 
+		</div>
+				
+
+			</div>
+			
+		</section>
+		<section class="sect2">
+		<div class="sect2-text">
+<div class="line1">
+	<span class="image-content1"></span>
+	<div class="text-content1">
+		<p>
+		Trade with crypto and digital assets in realtime	
+			
+		</p> <br>
+
+Our Tradin Panel is Optimised to provide real market 
+data and allows trade with digital assets and
+cryptocurrencies with ease and profits.
+	</div>
+</div>
+ <p class="p1"></p> <p class="p2"></p> <p class="p2"></p>
+
+<div class="line2">
+	<span class="image-content2"></span>
+	<div class="text-content1">
+		<p>
+Buy & Sell Cryptocurrency assets with HoluEX
+
+		</p> <br>
+
+Buy and Sell USDT, BNB, DOGE,  ADA
+and other currencies comfortable with fair 
+market prices
+	</div>
+</div> 
+<p class="p1"></p> <p class="p2"></p> <p class="p2"></p>
+			
+			                                         <div class="line3">
+				<span class="image-content3"></span>
+	<div class="text-content1">
+		<p>
+		Trade and Exchange 24/7
+	
+		</p> <br>
+
+Exchange anything and anywhere with our desktop 
+and mobile friendly user interface.
+	</div>
+			</div> 
+		</div>
+
+<img src="./images/4 1.png" class="sect2-image">
+
+		</section>
+
+		<section class="sect3">
+		<figure>
+
+
+
+			<p class="why">Why Choose Us</p>
+		</figure>
+		
+		</section>
+
+		<section class="sect4">
+			<div class="sect4-left">
+				<span>Latest Deposits</span>
+				<table class="table-left">
+					<tr class="left-row1">
+						<td style="content: url('./images/Group 18.jpg');"></td>
+					<td style="content: url('./images/Group 17.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+						</td>	
+					</tr>
+					<tr class="left-row2">
+						<td style="content: url('./images/nfts_word_art-20220421-0001 2.jpg');"></td>
+						<td style="content: url('./images/Group 13.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+					</tr>
+					<tr class="left-row3">
+						<td style="content: url('./images/nft_topdrop-20220421-0001.svg');"></td>
+						<td style="content: url('./images/Group 14.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+						
+					</tr>
+					<tr class="left-row4">
+						<td style="content: url('./images/r.jpg');"></td>
+						<td style="content: url('./images/Group 15.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+						
+					</tr>
+					<tr class="left-row5">
+						<td style="content: url('./images/r.jpg');"></td>
+						<td style="content: url('./images/Group 16.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+						
+					</tr>
+					
+				</table>
+			</div>
+			<div class="sect4-right">
+				<span>Latest Withdrawals</span>
+				<table class="table-right">
+					<tr class="right-row1">
+						<td style="content: url('./images/Group 18.jpg');"></td>
+						<td style="content: url('./images/Group 9.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+					</tr>
+					<tr class="right-row2">
+						<td style="content: url('./images/nfts_word_art-20220421-0001 2.jpg');"></td>
+						<td style="content: url('./images/Group 4.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+					</tr>
+					<tr class="right-row3">
+						<td style="content: url('./images/nft_topdrop-20220421-0001.svg');"></td>
+					<td style="content: url('./images/Group 10.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+					</tr>
+					<tr class="right-row4">
+						<td style="content: url('./images/r.jpg');"></td>
+						<td style="content: url('./images/Group 11.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+					</tr>
+					<tr class="right-row5">
+						<td style="content: url('./images/r.jpg');"></td>
+						<td style="content: url('./images/Group 12.svg');"></td>
+						<td>
+							59,000.45 <br> <span>4.494 BTC</span>
+							
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</section>
+
+	<aside></aside>
+</main>
+
+<footer>
+	
+
+</footer>
+
+
+</div>
+
+
+
+
+<script>
+	let close = document.querySelector(".closer");
+	let open = document.querySelector(".opener");
+	let ul = document.querySelector(".ul");
+
+	open.addEventListener("click", handleOpen);
+function handleOpen(){
+	close.style.display = "inline-block"
+	open.style.display = "none"
+ul.classList.add("open");
+}
+	close.addEventListener("click", handleClose);
+	function handleClose(){
+	close.style.display = "none"
+	open.style.display = "inline-block"
+ul.classList.remove("open")
+	}
+</script>
+</body>
+</html>
