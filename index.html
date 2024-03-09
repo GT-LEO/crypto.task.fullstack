@@ -308,6 +308,64 @@ tr{
 	padding-bottom:3vh;
 margin-left: 5vw;
 }
+.aside1-div2{
+	background:linear-gradient(180deg, rgba(255, 255, 255, 0) 34.38%, rgba(165, 51, 255, 0.116) 75.52%);
+height: 50vh;
+width: 70vw;
+margin-left: 15vw;
+margin-top: 20vh;
+box-shadow: 0px 4px 34px 21px #9D9D9D0F;
+
+}
+.aside1-div1{
+height: 44vh;
+width: 86vw;
+margin-left: 5vw;
+margin-top: 20vh;
+background-size: cover;
+}
+.play{
+	height: 5rem;
+	width: 5rem;
+margin-top: 15vh;
+display: inline-block;
+margin-left: 35vw;
+}
+#invest{
+	display: block;
+	text-align: center;
+	margin-top: inherit;
+	padding-top: 35vh;
+}
+#invest a{
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+text-decoration: none;
+color: white;
+padding:0.5rem 2rem 0.5rem 2rem;
+border-radius: 0.4rem;
+}
+.aside2{
+	width: 100%;
+	padding: 8vh 10vw 8vh 10vw;
+
+}
+.aside2 div{
+background:#F5F5F5;
+height:36vh;
+width:80vw;
+}
+.aside2 span{
+	display: inline-block;
+background: #FBB7B7;
+height:42vh;
+width:40vw;
+margin-left: 20vw;
+margin-top: -3vh;
+}
+
+
+
+
 
 
 	</style>
@@ -608,19 +666,34 @@ and mobile friendly user interface.
 		</section>
 	</section>
 
-	<aside></aside>
+	<aside class="aside">
+	<aside class="aside1">
+		<div class="aside1-div1" style="background-image:url('./images/Rectangle 17.svg');">
+			<div class="play" style="content:url('./images/Polygon 1.svg');"></div>
+		</div>
+
+		<div class="aside1-div2">
+			<span id="invest">
+				<a href="">Invest</a>
+			</span>
+		</div>
+
+	</aside>	
+	<aside class="aside2">
+		<div class="aside2-div">
+			<span></span>
+		</div>
+		
+	</aside>	
+	</aside>
 </main>
 
 <footer>
 	
-
 </footer>
 
 
 </div>
-
-
-
 
 <script>
 	let close = document.querySelector(".closer");
