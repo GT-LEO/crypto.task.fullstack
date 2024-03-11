@@ -10,7 +10,7 @@ overflow-x: hidden;
 	}
 	.parent{
 		overflow-x: hidden;
-		padding-bottom: 10vh;
+/*		padding-bottom: 10vh;*/
 	}
 	html, *, *::before, *::after{
 		box-sizing: border-box;
@@ -106,7 +106,7 @@ nav{
 	background:#FFCD6B ;
 }
 .back a{
-	margin-left: 65vw;
+	margin-left: 68vw;
 	background:#ca7113 ;
 	position: fixed;
 	line-height:2.6rem;
@@ -362,9 +362,123 @@ width:40vw;
 margin-left: 20vw;
 margin-top: -3vh;
 }
+footer{
+	background-image:url("./images/web9 1.png") ;
+	background-size: cover;
+	width: 100vw;
+	padding-right: 10vw;
+	padding-left: 10vw;
+	text-align: center;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
 
+.frame-spot a{
+content: url("./images/Frame.png");
+height: 2rem;
+width: 2rem;
+}
+.telegram a{
+content: url("./images/telegram 1.svg");
+height: 2.3rem;
+width: 2.3rem;
+background: #fff;
+padding: 0.3rem;
+border-radius: 0.8rem;
+}
+.frame-whatsapp a{
+content: url("./images/Frame (1).svg");
+height: 2rem;
+width: 2rem;
+}
+.group-call a{
+content: url("./images/Group 20.svg");
+height: 2rem;
+width: 2rem;
+}
+.contact p{
+	color: #fff;
+	font-weight: 800;
+	font-size: 1.2rem;
+	margin-bottom: 3vh;
+}
+.contact figure{
+display: flex;
+gap: 9vw;
+padding-left: 4vw;
+padding-right: 10vw;
+}
+.news-form{
+	background:linear-gradient(to right, #838087, #848290, #86849c);
+	width: 80vw;
+	padding: 1rem;
+	border-radius: 0.6rem;
+}
+.submit{
+	background: #0F17CE;
+	color:#fefefe;
+	padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+border: none;
+border-radius: 0.2rem;
+font-weight:700 ;
+margin-top: 2vh;
+	margin-right: -35vw;
+}
+.submit:hover{
+	cursor: pointer;
+}
+.news-input{
+	margin-top: 3vh;
+	border-radius: 0.4rem;
+	padding: 0.5rem;
+	width: 60vw;
+	border: none;
+}
+.news-form label{
+	color: #fff;
+	margin-left: -26vw;
+	font-weight: 700;
+}
+.newsletter{
+	margin-top: 6vh;
+}
+.newsletter p{
+	color: #fff;
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+.expore{
+}
+.explore p{
+	font-weight: 800;
+	font-size: 1.2rem;
+	color: #fff;
+	margin-top: 7vh;
 
+}
+.explore figure a{
+	text-decoration: none;
+	color: #fff;
+	padding: 0.2rem;
+}
+.explore figure a:hover{
+border-bottom: 2px solid #fff;
+}
+.explore figure div{
+	margin-top: 2vh;
 
+}
+.optimal{
+color:#fefefe;
+font-size: 1.1rem;
+font-weight: 700;
+margin-top: 3vh;
+
+}
+.bottom-line{
+	padding-bottom: 5vh;
+	border-bottom: 4px solid #fff;
+}
 
 
 
@@ -383,7 +497,7 @@ margin-top: -3vh;
 				<li> <a href="">Sign Up</a> </li>
 				<li> <a href="">About Us</a> </li>
 				<li> <a href="">Login</a> </li>
-				<li> <a href="">Contact Us</a> </li>
+				<li> <a href="https://wa.me/+2348147383504">Contact Us</a> </li>
 			</ul>
 		</nav>
 		<div id="opt">
@@ -689,9 +803,77 @@ and mobile friendly user interface.
 </main>
 
 <footer>
-	
-</footer>
+	<div class="footer-child">
 
+	<div class="contact">
+		<p>Contact Us</p> 
+<figure>
+		<div class="frame-spot">
+			<a href="mailto:gtoleo21@gmail.com"></a>
+		</div> 
+		<div class="telegram">
+			<a href="https://telegram.me/Leogerald"></a>
+		</div> 
+		<div class="frame-whatsapp"> 
+			<a href="https://wa.me/+2348147383504"></a>
+		 </div>
+		 <div class="group-call">
+			<a href="tel:+2348147383504"></a>
+		 </div> 
+	</figure>
+	</div>
+
+	<div class="explore">
+		<p>Explore</p>
+<figure>
+		<div>
+			<a href="">About Us</a>
+		</div>
+
+		 <div>
+			<a href="">The Market</a>
+		 </div> 
+
+		 <div>
+			<a href="">Sign Up</a>
+		 </div>
+
+		 <div>
+			<a href="mailto:gtoleo21@gmail.com">Contact Us</a>
+		 </div>
+
+		 <div>
+			<a href="">Login</a>
+		 </div>
+
+		 <div>
+			<a href="">FAQ</a>
+		 </div>
+
+		 <div>
+			<a href="">News</a>
+		 </div>
+		</figure>
+	</div>
+
+	<div class="newsletter">
+		<p>Newsletter</p> 
+		<form class="news-form">
+		<label>Join Our News Letter</label>
+		<br>
+		<input type="text" placeholder="Enter E-mail Address" class="news-input">
+		<br>
+		<button class="submit">Join</button>	
+		</form>
+		
+	</div>
+
+</div>
+<div class="bottom">
+	<p class="bottom-line"></p>
+	<div class="optimal">Optimal-Finance Limited</div>
+</div>
+</footer>
 
 </div>
 
@@ -713,5 +895,6 @@ ul.classList.add("open");
 ul.classList.remove("open")
 	}
 </script>
+
 </body>
 </html>
