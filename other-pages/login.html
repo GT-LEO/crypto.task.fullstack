@@ -45,6 +45,40 @@ header div a{
 header div a:hover{
 background: red;
 }
+.sections .sign-in{
+	padding: 1rem;
+	background: #eee;
+}
+.button1{
+	background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #868900 51.04%, #7C4B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	color: white;
+	border: none;
+padding: 0.5rem 2rem 0.5rem 2rem;
+font-weight: 600;
+font-size: 1.2rem;
+border-radius: 0.4rem;
+}
+.button1:hover{
+cursor: pointer;
+padding: 0.5rem 2rem 0.5rem 2rem;
+
+}
+.create{
+	text-decoration: none;
+	color: black;
+	opacity: 80%;
+	font-size: 1.1rem;
+	margin-right: 10vw;
+	border-bottom: 1px solid #777;
+}
+.sections .sign-in{
+	padding: 1rem;
+}
+form div input{
+	background: #eee;
+	border: none;
+	padding: 0.5rem;
+}
 .sections{
 	display: inline-block;
 	padding-top: 0vh;
@@ -57,8 +91,16 @@ background: red;
 	width: 85vw;
 	padding: 1rem;
 }
-
-
+.sections div{
+	display: inline-block;
+} 
+.asides{
+	text-align: center;
+}
+form div{
+	white-space: nowrap;
+	margin-bottom: 3vh;
+}
 
 footer{
 	background-image:url("../images/web9 1.png") ;
@@ -123,6 +165,10 @@ margin-top: 2vh;
 }
 .submit:hover{
 	cursor: pointer;
+}
+.buttons{
+	margin-top: 10vh;
+	white-space: nowrap;
 }
 .news-input{
 	margin-top: 3vh;
@@ -263,29 +309,21 @@ white-space: nowrap;
 
 <aside class="asides">
 	<form>
-		<div>
-		<label for="name">Name</label> <input type="text" placeholder="Enter Name" id="name"> 
-		</div>
-
-		<div>
-		<label for="number">Phone Number</label> <input type="text" placeholder="Enter Phone Number" id="number">
-		</div>
+		
 
 		<div>
 		<label for="email">E-Mail</label> <input type="text" placeholder="Enter E-mail" id="email">
 		</div>
 
 		<div>
-		<label for="country">Country</label> <input type="text" placeholder="Enter Country" id="country">
+		<label for="country">Password</label> <input type="text" placeholder="Enter Password" id="country">
 		</div>
 
-		<div>
-		<label for="referral">Referral Code:</label> <input type="text" placeholder="Referral Code(optional)" id="referral">
-</div>
-
+		
 <p class="buttons">
+		<a href="./sign-up.html" class="create">Create Account</a>
 		<button type="submit" class="button1">Sign In</button>
-		<button type="submit" class="button2">Sign Up</button>
+
 		</p>
 
 	</form>

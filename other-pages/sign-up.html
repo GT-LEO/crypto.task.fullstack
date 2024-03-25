@@ -48,23 +48,27 @@ background: red;
 main{
 	display: inline-block;
 	padding-top: 0vh;
-	margin-left: 2vw;
+	margin-left: 3vw;
 	margin-right: 5vw;
 	margin-bottom: 5vh;
 	text-align: center;
 	margin-top: -10vh;
 	background: #fff;
 	width: 80vw;
-	padding: 1rem;
+	padding: 0.5rem;
 	padding-bottom: 2rem;
 	box-shadow: 0px 0px 1px 1px #efefef;
 border-radius: 1rem;
+}
+label{
+	font-size: 0.8rem;
 }
 .sections{
 padding-bottom: 4rem;
 }
 form div{
 	margin-bottom: 3vh;
+	white-space: nowrap;
 }
 form p{
 	margin-top: 6vh;
@@ -89,13 +93,14 @@ background: #eeeeee;
 cursor: pointer;	
 }
 .button1{
-padding: 0.5rem 2rem 0.5rem 2rem;
-border:none;
-pointer-events: none;
+	text-decoration: none;
+padding: 0.2rem 1rem 0.2rem 1rem;
+border-bottom: 1px solid #999;
 background: none;
 font-size: 1.2rem;
-margin-right: 20vw;
-opacity: 40%;
+margin-right: 15vw;
+opacity: 90%;
+color: #999;
 }
 .button2{
 	background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #868900 51.04%, #7C4B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -230,7 +235,7 @@ margin-top: 3vh;
 .asides input{
 	border:none;
 	background: #eeeeee;
-	padding: 0.8rem;
+	padding: 0.5rem;
 border-radius: 0.4rem;
 
 }
@@ -306,6 +311,7 @@ white-space: nowrap;
 }
 
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="parent2">
@@ -341,12 +347,20 @@ white-space: nowrap;
 		<label for="country">Country</label> <input type="text" placeholder="Enter Country" id="country">
 		</div>
 
+<div>
+		<label for="password">Password</label> <input type="text" placeholder="Enter Password" id="password">
+		</div>
+
+		<div>
+		<label for="confirm-password">Confirm Password</label> <input type="text" placeholder="Re-enter password" id="confirm-password">
+		</div>
+
 		<div>
 		<label for="referral">Referral Code:</label> <input type="text" placeholder="Referral Code(optional)" id="referral">
 </div>
 
 <p class="buttons">
-		<button type="submit" class="button1">Sign In</button>
+		<a href="./login.html" class="button1">Sign In</a>
 		<button type="submit" class="button2">Sign Up</button>
 		</p>
 
