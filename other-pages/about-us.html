@@ -48,14 +48,15 @@ background: red;
 .sections{
 	display: inline-block;
 	padding-top: 0vh;
-	margin-left: 5vw;
+/*	margin-left: 5vw;*/
 	margin-right: 5vw;
 	margin-bottom: 5vh;
 	text-align: center;
 	margin-top: -10vh;
-	background: #fff;
-	width: 85vw;
-	padding: 1rem;
+/*	background: #fff;*/
+/*	width: 85vw;*/
+	padding: 2vw;
+	padding-right: 3vw;
 }
 
 
@@ -183,13 +184,161 @@ margin-top: 3vh;
 	padding-bottom: 5vh;
 	border-bottom: 4px solid #fff;
 }
+.thing1, .thing2, .thing3{
+text-align: center;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.38%, rgba(255, 240, 109, 0.116) 75.52%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+width: 94%;
+padding: 2rem;
+padding-bottom: 3rem;
+/*margin-right: 3%;*/
+box-shadow: 0px 4px 34px 21px #9D9D9D0F;
+margin-bottom:5vh;
+border-radius: 6px;
+}
+.thing1 figure, .thing2 figure, .thing3 figure{
+margin-bottom: 2rem;
+}
+.thing1 img, .thing2 img, .thing3 img{
+margin-top: 5rem;
+}
+.thing1 a{
+text-decoration: none; background: gold; padding: 0.4rem; width: 10rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #999900 51.04%, #A68227 100%);
+color: white;
+padding-left: 2rem; padding-right: 2rem;
 
+}
+ .thing2 a{
+text-decoration: none; background: gold; padding: 0.4rem; width: 10rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #bbbb00 51.04%, #A68227 100%);
+color: white;
+padding-left: 2rem; padding-right: 2rem;
+
+ } 
+ .thing3 a{
+text-decoration: none; background: gold; padding: 0.4rem; width: 10rem;
+background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #7C4B00 0%, #dccd00 51.04%, #A68227 100%);
+color: white;
+padding-left: 2rem; padding-right: 2rem;
+}
+.text1, .text2{
+	color: #666;
+	padding: 0.5rem 3rem 0.5rem 2rem;
+}
+.sect3{
+	background: #D9D9D9;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	width: 100vw;
+	margin-left: -3vw;
+	text-align: left;
+	white-space: nowrap;
+}
+.sect3 .num{
+color: #000;
+font-weight: 700;
+font-size: 1rem;
+padding-left: 1rem;
+
+}
+.sect3 .record{
+	color: #666;
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-left: 32vw;
+}
+.aside1{
+text-align: center;
+padding-top: 3vh;
+border-top: 1px solid #E0E0E0;
+
+}
+.aside1 p{
+font-weight: 600;
+font-size: 1.6rem;
+color: #878787;
+}
+.aside1 div span{
+	display: inline-block;
+	height: 60vw;
+	width: 60vw;
+	background:#D9D9D9;
+	margin-bottom: 5vh;
+}
+.text3, .text4{
+	border-top: 2px solid #D2D2D2;
+	padding-top: 3vh;
+	width: 60vw;
+	margin-left: 19vw;
+}
+.aside2{
+	padding-bottom: 10vh;
+}
+.aside2 > p{ 
+margin-left: 10vw;
+font-weight: 600;
+font-size: 1.6rem;
+color: #878787;	
+}
+.cert-back{
+	display: block;
+	height: 80vw;
+	width: 80vw;
+	background: #D9D9D9;
+	margin-left: 9vw;
+}
+.mission, .vision{
+	color:#848484;
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin-left: 20vw;
+}
+.mission{
+	padding-top: 6vh;
+}
 
 
 
 
 
 @media(min-width:1020px){
+.cert-back{
+	display: inline-block;
+	height: 40vw;
+	width: 40vw;
+	margin-left: 1vw;
+}
+.text3, .text4{
+	width: 50vw;
+	margin-left: 0vw;
+	margin-right: 2vw;
+color: #848484;
+}
+.alignment{
+	display: flex;
+	gap: 6vw;
+}
+
+.aside1 div span{
+	height: 20vw;
+	width: 20vw;
+}
+.aside1 div{
+	display: flex;
+	gap: 4vw;
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+.aside1 p{
+	text-align: left;
+	padding-left: 3vw;
+}
+.aside2 > p{ 
+margin-left: 4vw;	
+}
+
+
 	.footer-child{
 	display: flex;
 	align-items: flex-start;
@@ -250,6 +399,10 @@ white-space: nowrap;
 .submit{
 	margin-right: -25vw;
 }
+.things{
+	display: flex;
+	gap: 5vw;
+}
 
 }
 
@@ -267,21 +420,87 @@ white-space: nowrap;
 
 <main>
 <section class="sections">
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
-	ggggggggggggggggggggggggggggggggggggggggggggggggg
+	<section class="sect1">
+		
+	</section>
+
+	<section class="sect2">
+		<div class="things">
+
+	<div class="thing1"> <img src="../images/investment-model-svgrepo-com 2.svg"> 
+		<figure>
+<p id="binary">Binary Option</p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sagittis nunc, nec euismod id nisl ante turpis. Augue vel velit semper malesuada odio dis sed.</figure> <br>
+		 <a href="">Invest</a>
+		  </div>
+	<div class="thing2"> <img src="../images/increasing-stocks-graphic-of-bars-svgrepo-com 1.svg"> 
+		<figure>
+<p id="stock">Stocks $ ETF</p>
+
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sagittis nunc, nec euismod id nisl ante turpis. Augue vel velit semper malesuada odio dis sed.</figure> <br> 
+		<a href="">Invest</a> </div>
+	<div class="thing3"> <img src="../images/coin-stack-svgrepo-com (1) 1.svg">
+	<br> 
+		<figure>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sagittis nunc, nec euismod id nisl ante turpis. Augue vel velit semper malesuada odio dis sed.</figure> <br>
+		<div id="invest3"> <a href="">Invest</a> </div>  
+		</div>
+				
+
+			</div>
+
+			<p class="text1">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lectus eleifend ut id conguelobortis. Volutpat fusce felis vitae dictumst egestas. Fringilla volutpat ut arcu, nam suscipit scelerisque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lectus eleifend ut id conguelobortis. Volutpat fusce felis vitae dictumst egestas. Fringilla volutpat ut arcu, nam suscipit scelerisque ultrices.
+			</p>
+
+<p class="text2">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lectus eleifend ut id conguelobortis. Volutpat fusce felis vitae dictumst egestas. Fringilla volutpat ut arcu, nam suscipit scelerisque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lectus eleifend ut id conguelobortis. Volutpat fusce felis vitae dictumst egestas. Fringilla volutpat ut arcu, nam suscipit scelerisque ultrices.
+</p>
+
+	</section>
+
+	<section class="sect3">
+		<span class="num">703833</span>
+		<span class="record">TRACK RECORD</span>
+	</section>
 </section>
 
-<aside class="asides"></aside>
+<aside class="asides">
+	<aside class="aside1">
+		<p>Our Team</p>
+		<div>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</aside>
+	<aside class="aside2">
+		<p>Certification</p>
+		<div class="alignment">
+			<span class="cert-back"></span>
+			<div>
+				<p class="our1">
+					<span class="mission">Our Mission</span>
+				<p class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Facilisis diam velit, phasellus tortor sed mi facilisi elit p
+orttitor. Risus erat dui nunc, suspendisse laoreet nibh lib
+ero donec tellus.</p>
+</p>
+
+				<p>
+					<p class="our2">
+					<span class="vision">Our Vision</span>
+				<p class="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Facilisis diam velit, phasellus tortor sed mi facilisi elit p
+orttitor. Risus erat dui nunc, suspendisse laoreet nibh lib
+ero donec tellus.</p>
+</p>
+				</p>
+
+			</div>
+		</div>
+	</aside>
+</aside>
 
 </main>
 
