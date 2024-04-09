@@ -1089,6 +1089,7 @@ and mobile friendly user interface.
 		<br>
 		<input type="text" placeholder="Enter E-mail Address" class="news-input">
 		<br>
+		<h4 class="h4"></h4>
 		<button class="submit">Join</button>	
 		</form>
 		
@@ -1103,24 +1104,7 @@ and mobile friendly user interface.
 
 </div>
 
-<script>
-	let close = document.querySelector(".closer");
-	let open = document.querySelector(".opener");
-	let ul = document.querySelector(".ul");
-
-	open.addEventListener("click", handleOpen);
-function handleOpen(){
-	close.style.display = "inline-block"
-	open.style.display = "none"
-ul.classList.add("open");
-}
-	close.addEventListener("click", handleClose);
-	function handleClose(){
-	close.style.display = "none"
-	open.style.display = "inline-block"
-ul.classList.remove("open")
-	}
-</script>
+<script src="./js/index.js"></script>
 
 </body>
 </html>
