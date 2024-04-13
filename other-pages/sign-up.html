@@ -339,7 +339,7 @@ white-space: nowrap;
 </section>
 
 <aside class="asides">
-	<form>
+	<form class="formfill">
 		<div>
 		<label for="name">Name</label> <input type="text" placeholder="Enter Name" id="name"> 
 		</div>
@@ -367,6 +367,12 @@ white-space: nowrap;
 		<div>
 		<label for="referral">Referral Code:</label> <input type="text" placeholder="Referral Code(optional)" id="referral">
 </div>
+
+<div class="error1"></div>
+<div class="error2"></div>
+<div class="error3"></div>
+<div class="error4"></div>
+<div class="success"></div>
 
 <p class="buttons">
 		<a href="./login.html" class="button1">Sign In</a>
@@ -454,6 +460,42 @@ white-space: nowrap;
 
 </div>
 <script src="../js/sign-up.js"></script>
+<script>
+	let formFill = document.querySelector(".formfill");
+	formFill.addEventListener("submit", handleSubmit3);
+	function handleSubmit3(e){
+event.preventDefault();
+	let name = document.querySelector("#name").value;
+	let email = document.querySelector("#email").value;
+	let phoneNumber = document.querySelector("#number").value;
+	let password = document.querySelector("#password").value;
+	let confirmPassword = document.querySelector("#confirm-password").value;
+	let country = document.querySelector("#country").value;
+	let referralCode = document.querySelector("#referral").value;
+let errorOne = document.querySelector(".error1");
+let errorTwo = document.querySelector(".error2");
+let errorThree = document.querySelector(".error3");
+let errorFour = document.querySelector(".error4");
 
+let userDetails = {
+	userName:name,
+	userEmail:email,
+	userPhone:phoneNumber,
+	userPassword:password,
+	userReferral:referralCode
+}
+if(name.length <=0 || email.length <= 0 || phoneNumber.length <= 0 || password.length <= 0 || confirmPassword.length <= 0 || country.length <= 0 || password !== confirmPassword){
+errorOne.innerText = "Fill-in your details completely, ensure the passwords are matched!";
+errorOne.style.color = "red";
+errorOne.style.fontSize = "0.7rem";
+}
+
+else{
+errorOne.innerText = "Registered Successfully!";
+errorOne.style.color = "green";
+console.log(userDetails)
+}
+}
+</script>
 </body>
 </html>
